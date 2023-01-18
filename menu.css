@@ -50,8 +50,8 @@ nav {
   position: fixed;
   background-color: #00000088;
   /* height: 0px; */
-  left: calc(-10% - 4px);
-  width: 10%;
+  left: calc(-5% - 4px);
+  width: 5%;
   bottom: 40px;
   padding: 2px;
   transition: 500ms;
