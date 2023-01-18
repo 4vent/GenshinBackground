@@ -5,7 +5,7 @@ var canvasArea = 0
 function resizeCanvas() {
     canvas.width = canvasElement.clientWidth;
     canvas.height = canvasElement.clientHeight;
-    canvasArea = canvas.width * canvas.height / 200000;
+    canvasArea = canvas.width * canvas.height / 100000;
     console.log(canvasArea)
 }
 
