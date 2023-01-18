@@ -4,16 +4,33 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <!-- <script src="smoke.js"></script> -->
+    <title>GenshinBG</title>
     <script src="script.js" type="module"></script>
+    <script src="menu.js"></script>
     <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" type="text/css" href="menu.css">
 </head>
 <body>
     <div id="main-panel" class="background absolutor">
-        <img class="size-fit object-fit" src="rainbow_fog.png">
-        <img class="blend-screen size-fit object-fit" src="rainbow_star.png">
-        <canvas id="canvas" class="blend-dodge size-fit"></canvas>
+        <img class="size-fit object-fit absolute" src="rainbow_fog.png">
+        <img class="blend-screen size-fit object-fit absolute" src="rainbow_star.png">
+        <canvas id="canvas" class="blend-dodge size-fit absolute"></canvas>
+        <div class="menu absolute">
+            <div><button id="menu-button">menu</button></div>
+            <div class="menu-bg">
+                <nav>
+                    <button id="pyro">pyro</button><br>
+                    <button id="hydro">hydro</button><br>
+                    <button id="anemo">anemo</button><br>
+                    <button id="electro">electro</button><br>
+                    <button id="dendro">dendro</button><br>
+                    <button id="cyro">cyro</button><br>
+                    <button id="geo">geo</button><br>
+                    <button id="none">none</button><br>
+                    <button id="auto">auto</button>
+                </nav>
+            </div>
+        </div>
     </div>
 </body>
 </html>

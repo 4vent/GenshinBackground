@@ -23,18 +23,33 @@ setInterval(function(){
 
 const background = document.getElementById('main-panel')
 const states = ["colorpyro", "colorhydro", "coloranemo", "colorelectro", "colordendro", "colorcyro", "colorgeo"]
-var state = 0;
-setInterval(() => {
+var auto_state = 0;
+var state = 9;
+
+function autoColorSet() {
+    const itvno = setInterval(() => {
+        if (state != 9) clearInterval(itvno)
+        colorSet(auto_state)
+        
+        auto_state = (auto_state + 1) % 8;
+    }, 10000)
+}
+autoColorSet();
+
+function colorSet(state) {
     states.forEach(s => {
         if (background.classList.contains(s)) background.classList.remove(s);
     });
 
-    if (state != 7) {
+    if (auto_state != 7) {
         background.classList.add(states[state]);
     }
-    
-    state = (state + 1) % 8;
-}, 10000)
+}
+
+function buttonListner(num) {
+    state = num;
+    if state !=
+}
 
 document.addEventListener('DOMContentLoaded', () => {
     const observer = new ResizeObserver(e => {

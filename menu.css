@@ -1,0 +1,68 @@
+/* header {
+    background: #333;
+    padding: .5rem;
+    text-align: right;
+  }
+  a {
+    color: #fff;
+    text-decoration: none;
+    white-space: nowrap;
+  }
+  li {
+    margin: 2rem 0;
+  } */
+   
+  /* ボタン */
+  /* .btn-menu {
+    border: 1px solid #999;
+    background: transparent;
+    color: #fff;
+    padding: .5rem 1rem;
+    font-size: 1rem;
+    cursor: pointer;
+    line-height: 1;
+  } */
+   
+  /* メニュー */
+  /* nav {
+    background: #0bd;
+    position: absolute;
+    z-index: 1;
+    top: 3.125rem;
+    right: 0;
+    overflow-x: hidden;
+    text-align: center;
+    width: 0;
+    transition: 1s;
+  } */
+   
+  /* メニューを開いた時 */
+  /* nav.open-menu {
+    width: 100%;
+  } */
+.menu {
+  position: absolute;
+  right: auto;
+  bottom: 0;
+  top: auto;
+  left: 0;
+}
+
+#menu-button {
+  border: 0;
+}
+
+nav {
+}
+
+.menu-bg {
+  background-color: #00000088;
+  height: 0px;
+  padding: 0px;
+  transition: 500ms;
+}
+
+.menu-bg.open-menu{
+  height: 230px;
+  padding: 2px;
+}
