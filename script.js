@@ -98,4 +98,11 @@ document.addEventListener('DOMContentLoaded', () => {
     document.querySelector('button#geo').addEventListener('click', () => bgcon.state = 6);
     document.querySelector('button#none').addEventListener('click', () => bgcon.state = 7);
     document.querySelector('button#auto').addEventListener('click', () => bgcon.state = 8);
+
+    const rainbow_bg = document.querySelector('#rainbow-bg');
+    var backgroundPosition = 0;
+    setInterval(() => {
+        backgroundPosition -= 30;
+        rainbow_bg.style.backgroundPosition = backgroundPosition.toString() + 'px'
+    }, 200)
 })

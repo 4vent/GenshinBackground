@@ -60,13 +60,23 @@ canvas {
 }
 
 
-.blend-screen {
+.blend-add {
     mix-blend-mode: screen;
 }
 
 .blend-dodge {
     opacity: 0.5;
     mix-blend-mode: overlay;
+}
+
+.blend-multiply {
+    mix-blend-mode: multiply;
+}
+
+#rainbow-bg {
+    background-image: url("rainbow.jpg");
+    background-size: cover;
+    background-position: 0px;
 }
 
 .size-fit {
