@@ -100,9 +100,13 @@ document.addEventListener('DOMContentLoaded', () => {
     document.querySelector('button#auto').addEventListener('click', () => bgcon.state = 8);
 
     const rainbow_bg = document.querySelector('#rainbow-bg');
+    const stars = document.querySelector('#stars');
     var backgroundPosition = 0;
-    setInterval(() => {
-        backgroundPosition -= 30;
-        rainbow_bg.style.backgroundPosition = backgroundPosition.toString() + 'px'
-    }, 200)
+    function starAnimation() {
+        backgroundPosition += 1;
+        rainbow_bg.style.backgroundPosition = (-backgroundPosition * 5).toString() + 'px'
+        stars.style.backgroundPosition = (backgroundPosition / 5).toString() + 'px'
+        requestAnimationFrame(starAnimation)
+    }
+    starAnimation();
 })
